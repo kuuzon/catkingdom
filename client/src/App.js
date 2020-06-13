@@ -9,6 +9,7 @@ import Status from './components/Status';
 import NotFound from './components/NotFound';
 
 //Import Layouts
+import './App.css';
 import Layout from './components/layout/Layout';
 import NavigationBar from './components/layout/NavigationBar';
 import Jumbotron from './components/layout/Jumbotron';

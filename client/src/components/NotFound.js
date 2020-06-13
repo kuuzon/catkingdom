@@ -4,19 +4,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 
 const H2 = styled.h2`
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
     color: red;
     text-align: center;
 `;
 
 const H3 = styled.h3`
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: red;
     text-align: center;
 `;
 
 const P = styled.p`
-    font-size: 2rem;
+    font-size: 1rem;
     color: black;
     text-align: center;
 `;

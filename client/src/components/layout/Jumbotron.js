@@ -10,23 +10,32 @@ const Styles = styled.div`
     .jumbo {
         background: url(${catImage}) no-repeat fixed bottom;
         background-size: cover;
-        color: #efefef;
-        height: 250px;
+        background-position: right 50% bottom 50%;
+        color: #FCEEED;
+        height: 300px;
         position: relative;
-        z-index: -2;    
-        scale: 100px;
+        z-index: -1;    
+        scale: 1rem;
         /* z-index is about stacking things on each other */
     }
 
     .overlay {
         background-color: #000;
-        opacity: 0.5;
+        opacity: 0.6;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         z-index: -1;
+    }
+
+    .container {
+        padding-top: 7rem;
+    }
+
+    p {
+        font-style: italic;
     }
 `;
 
@@ -35,9 +44,9 @@ const Jumbotron = () => {
         <Styles>
             <Jumbo fluid className='jumbo'>
                 <div className='overlay'></div>
-                <Container>
-                    <h1>Welcome</h1>
-                    <p>This is my cat website...meow nyaaaaaaaaaaaa</p>
+                <Container className='container'>
+                    <h3>The CatKingdom</h3>
+                    <p>The one-stop cat cornucopia for your cat pics, pats and memes</p>
                 </Container>
             </Jumbo>
         </Styles>
