@@ -10,6 +10,9 @@ const Styles = styled.div`   //Instead of div, can be any html tag required like
         background-color: #F9BE8B;
         font-weight: bold;
         height: 3rem;
+        /* Scrolling opacity */
+        backdrop-filter: saturate(180%) blur(20px);
+        opacity: 0.80;
     }
 
     .navbar-brand, .navbar-nav .nav-link {
@@ -29,7 +32,7 @@ const Styles = styled.div`   //Instead of div, can be any html tag required like
 const NavigationBar = () => {
     return (
         <Styles>
-            <Navbar expand='lg'>
+            <Navbar expand='lg' fixed="top">
                 <Navbar.Brand href='/'>
                     <FontAwesomeIcon 
                         alt=""

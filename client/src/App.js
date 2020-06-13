@@ -38,6 +38,7 @@ function App() {
 
 export default App;
 
-//Steps to complete 
-//[1] Add padding/margin to bottom of pages
-//[2] Make the navigation bar follow the scroll
+//Iteration notes:
+//[1] Consistency of theme between contact & newsletter (instyles)
+//[2] Consistency of theme with server status 
+//[3] Add further functionality to home page catalogue (maybe Flickr API endpoint?)

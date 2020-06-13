@@ -22,3 +22,7 @@ app.use('/status', statusRoutes);
 //Port
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log(`Server started on port: ${PORT}`));
+
+//Iteration notes:
+//[1] Add Nexmo functionality
+//[2] Add SEO/Analytics functionality

@@ -109,7 +109,7 @@ const Contact = () => {
                     />
                 </Form.Group>
 
-                <Button variant="secondary" type="submit">Submit</Button>
+                <Button variant="dark" type="submit">Submit</Button>
             </Form>
         </Fragment>
     )

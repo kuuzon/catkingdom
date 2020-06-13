@@ -52,7 +52,7 @@ const Newsletter = () => {
     return (
         <Fragment>
             <h2>Newsletter Signup</h2>
-            <p className="lead">Signup to our awesome newsletter to get more cat pics!</p>
+            <p className="lead">Signup to our cat-tastic newsletter to keep in the cat-loop!</p>
             {
                 show === true ? 
                 (
@@ -101,7 +101,7 @@ const Newsletter = () => {
                         onChange={e => onChange(e)}
                     />
                 </Form.Group>
-                <Button variant="secondary" type="submit">Submit</Button>
+                <Button variant="dark" type="submit">Submit</Button>
             </Form>
         </Fragment>
     )

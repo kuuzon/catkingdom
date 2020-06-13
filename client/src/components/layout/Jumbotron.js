@@ -8,9 +8,9 @@ import catImage from '../../assets/cat.jpg';
 //Custom styles CSS
 const Styles = styled.div`
     .jumbo {
-        background: url(${catImage}) no-repeat fixed bottom;
+        background: url(${catImage}) no-repeat;
         background-size: cover;
-        background-position: right 50% bottom 50%;
+        background-position: right 40% bottom 75%;
         color: #FCEEED;
         height: 300px;
         position: relative;
