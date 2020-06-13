@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 //Import custom components
 import Home from './components/Home';
 import Newsletter from './components/Newsletter';
+import Contact from './components/Contact';
 import Status from './components/Status';
 import NotFound from './components/NotFound';
 
@@ -25,6 +26,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/signup' component={Newsletter}></Route>
+          <Route exact path='/contact' component={Contact}></Route>
           <Route exact path='/status' component={Status}></Route>
           <Route component={NotFound}></Route>
         </Switch>
@@ -35,3 +37,7 @@ function App() {
 }
 
 export default App;
+
+//Steps to complete 
+//[1] Add padding/margin to bottom of pages
+//[2] Make the navigation bar follow the scroll

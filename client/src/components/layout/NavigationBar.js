@@ -48,6 +48,9 @@ const NavigationBar = () => {
                             <Nav.Link href='/signup'>Newsletter</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
+                            <Nav.Link href='/contact'>Contact Us</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
                             <Nav.Link href='/status'>Server Status</Nav.Link>
                         </Nav.Item>
                     </Nav>

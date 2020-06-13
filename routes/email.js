@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 //Email route
-router.post('/form', (req, res) => {
+router.post('/', (req, res) => {
     console.log(req.body);
     const output = `
     <p>You have a new contact request </p>
@@ -39,15 +39,17 @@ router.post('/form', (req, res) => {
         html: output
     };
 
-    //Step 3: Send Email Message
-    transporter.sendMail(mailOptions, (error, info) => {
+    //Step 3: Send Email Message (info callback contains our form information)
+    transporter.sendMail(mailOptions, (err, info) => {
         console.log('Sending email...')
-        if(error) {
-            return console.log('Errors: ', error);
+        if(err) {
+            console.log('Errors: ', err);
+            res.status(400).send(err)
         } else {
             console.log('Message sent: %s', info.messageId);
-            console.log('Email sent.  Success.')
-        }
+            console.log('Email sent.  Success.');
+            res.status(200).send('Your message has been successfully sent.  Thank you for your feedback!');
+        };
     });
 
 });

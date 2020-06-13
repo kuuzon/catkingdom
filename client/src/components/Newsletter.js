@@ -56,9 +56,13 @@ const Newsletter = () => {
             {
                 show === true ? 
                 (
-                    <Alert className='mt-5' variant={variant} onClose={() => setShow(false)} dismissible >
+                    <Alert 
+                        className='mt-5' 
+                        variant={variant} 
+                        onClose={() => setShow(false)} dismissible 
+                    >
                         <Alert.Heading>
-                            { variant === 'success' ? ' Success ' : 'Oh Snap!...Something went wrong!' }
+                            { variant === 'success' ? ' Success ' : 'Oops! ...Something went wrong!' }
                         </Alert.Heading>
                         <p>
                             {message}

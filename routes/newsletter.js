@@ -1,4 +1,5 @@
 //Import packages/modules
+require('dotenv').config();
 const express = require('express');
 const request = require('request');
 const router = express.Router();
@@ -38,7 +39,7 @@ router.post('/', (req, res) => {
       url: 'https://us8.api.mailchimp.com/3.0/lists/b13c681eba',
       method: 'POST',
       headers: {
-        Authorization: 'auth be2aa84e8830ea9a644340e8ec93e3c5-us8'
+        Authorization: process.env.AUTHORIZATION
       },
       body: postData
     }
@@ -61,7 +62,6 @@ router.post('/', (req, res) => {
         }
       }
     })
-  
 });
 
 //Export route

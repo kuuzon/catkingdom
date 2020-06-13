@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardColumns } from 'react-bootstrap';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 //Import images
 import catMeme1 from '../../assets/catmeme1.jpg';

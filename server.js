@@ -3,8 +3,9 @@ const express = require('express');
 
 //Import route modules
 const newsletterRoutes = require('./routes/newsletter');
-const statusRoutes = require('./routes/status');
 const emailRoutes = require('./routes/email');
+const statusRoutes = require('./routes/status');
+
 
 //Init application
 const app = express();
@@ -15,8 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 
 //Routes Middleware (Refactored into Routes folder)
 app.use('/signup', newsletterRoutes);
+app.use('/contact', emailRoutes);
 app.use('/status', statusRoutes);
-app.use('/api', emailRoutes);
 
 //Port
 const PORT = process.env.PORT || 5000;
