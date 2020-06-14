@@ -8,7 +8,7 @@ import { faPaw } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
 //Custom styles for navs
-const Styles = styled.div`   //Instead of div, can be any html tag required like button, container, etc.
+const Styles = styled.div`  
     .navbar {
         background-color: #F9BE8B;
         font-weight: bold;
@@ -28,7 +28,7 @@ const Styles = styled.div`   //Instead of div, can be any html tag required like
     .d-inline-block {
         color: #F96376;
     }
-`
+`;
 
 const NavigationBar = () => {
     return (

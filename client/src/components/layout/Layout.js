@@ -2,12 +2,21 @@
 import React from 'react'
 
 //Import packages
-import { Container } from 'react-bootstrap';    //{Container} is an "element"
+import { Container } from 'react-bootstrap';    
+import styled from 'styled-components';
+
+const Styles = styled.div`  
+    .mainlayout {
+        padding-bottom: 2rem;
+    }
+`;
 
 const Layout = props => (
-    <Container>
-        {props.children}
-    </Container>
+    <Styles>
+        <Container className="mainlayout">
+            {props.children}
+        </Container>
+    </Styles>
 )
 
 export default Layout

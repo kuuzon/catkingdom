@@ -25,4 +25,4 @@ app.listen(PORT, console.log(`Server started on port: ${PORT}`));
 //Iteration notes:
 //[1] Add Nexmo functionality
 //[2] Add SEO/Analytics functionality
-//[3] Add further functionality to home page catalogue (maybe Flickr API / https://thecatapi.com/ endpoint?)
+//[3] Add further functionality to home page catalogue (maybe integrate Flickr API / https://thecatapi.com/ endpoint to home catalogue, so it live updates (ONLY IF THERE IS TIME))

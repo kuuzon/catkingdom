@@ -14,6 +14,7 @@ import './App.css';
 import Layout from './components/layout/Layout';
 import NavigationBar from './components/layout/NavigationBar';
 import Jumbotron from './components/layout/Jumbotron';
+import BottomNav from './components/layout/BottomNav';
 
 //Main Routing & Display
 function App() {
@@ -32,11 +33,9 @@ function App() {
         </Switch>
       </Router>
      </Layout>
+     <BottomNav />
    </Fragment>
   );
 }
 
 export default App;
-
-//Iteration notes:
-//[1] Add further functionality to home page catalogue (maybe Flickr API / https://thecatapi.com/ endpoint?)
