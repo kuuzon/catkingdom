@@ -6,6 +6,7 @@ const router = express.Router();
 //Email route
 router.post('/', (req, res) => {
     console.log(req.body);
+    //Body of auto-email
     const output = `
     <p>You have a new contact request </p>
     <h3>Contact Details </h3>
@@ -17,29 +18,33 @@ router.post('/', (req, res) => {
     <p>${req.body.message} </p>
     `;
 
-    //Step 1: Create a transport object
+    //Create transport object
     let transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 587,
-        secure: false,                  //Defines whether to use SSL or, if false, not
+        secure: false,  
+        //Defines whether to use SSL or, if false, not                
         auth: {
             user: process.env.EMAIL,
             pass: process.env.PASSWORD,
         },
         tls: {
-            rejectUnauthorized: false    //If true, server will reject any connection not authorised with supplied list
+            rejectUnauthorized: false    
+            //True: server will reject any connection not authorised with supplied list
         }
     });
 
-    //Step 2: Create mail options
+    //Mail options
     let mailOptions = {
-        from: process.env.EMAIL,                            //Sender address
-        to: 'abicknell3@student.holmesglen.edu.au',        //Receiver address
-        subject: 'Node contact request',
+        //Sender address
+        from: process.env.EMAIL,
+        //Receiver address                            
+        to: 'abicknell3@student.holmesglen.edu.au',        
+        subject: 'CatKingdom contact request',
         html: output
     };
 
-    //Step 3: Send Email Message (info callback contains our form information)
+    //Send Email Message (info callback contains our form information)
     transporter.sendMail(mailOptions, (err, info) => {
         console.log('Sending email...')
         if(err) {

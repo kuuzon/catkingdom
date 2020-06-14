@@ -1,4 +1,7 @@
+//Import React components
 import React from 'react'
+
+//Import packages
 import {Jumbotron as Jumbo, Container} from 'react-bootstrap';
 import styled from 'styled-components';
 

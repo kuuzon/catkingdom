@@ -1,6 +1,23 @@
+//Import React components
 import React, { Fragment, useState } from 'react';
+
+//Import packages
 import { Form, Button, Alert } from 'react-bootstrap';
+import styled from 'styled-components';
 import axios from 'axios';
+
+//Custom styles for tags
+const H2 = styled.h2`
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #D2691E;
+`;
+
+const P = styled.p`
+    font-size: 1rem;
+    color: black;
+    padding-bottom: 1rem;
+`;
 
 const Newsletter = () => {
     //Set state for the form
@@ -11,7 +28,6 @@ const Newsletter = () => {
     });
 
     //Set state for alert 
-    //default state is false, as the only state is Show, we don't want the alert showing all the time
     const [show, setShow] = useState(false);
     const [alertData, setAlertData] = useState({
         variant: 'danger',
@@ -21,6 +37,7 @@ const Newsletter = () => {
     const { firstName, lastName, email } = formData;
     const { variant, message } = alertData;
     
+    //Post data functions
     const onChange = e => setFormData({
         ...formData, [e.target.name]: e.target.value
     })
@@ -51,8 +68,10 @@ const Newsletter = () => {
 
     return (
         <Fragment>
-            <h2>Newsletter Signup</h2>
-            <p className="lead">Signup to our cat-tastic newsletter to keep in the cat-loop!</p>
+            <H2>Newsletter Signup</H2>
+            <P>Signup to our cat-tastic newsletter to keep in the cat-loop:</P>
+
+            {/* Alert Display */}
             {
                 show === true ? 
                 (
@@ -70,6 +89,8 @@ const Newsletter = () => {
                     </Alert>
                 ) : null
             }
+            
+            {/* Form */}
             <Form onSubmit={handleSubmit}>
                 <Form.Group controlId="firstName">
                     <Form.Label>First Name</Form.Label>

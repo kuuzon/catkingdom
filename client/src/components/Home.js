@@ -1,8 +1,11 @@
+//Import React components
 import React, {Fragment} from 'react';
+
+//Import packages
 import styled from 'styled-components';
 import Card from './layout/Card';
 
-//Custom styles for navs
+//Custom styles for home tags
 const H2 = styled.h2`
     font-size: 1.5rem;
     font-weight: bold;

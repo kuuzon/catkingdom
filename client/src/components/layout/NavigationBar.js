@@ -1,4 +1,7 @@
+//Import React components
 import React from 'react';
+
+//Import packages
 import { Nav, Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaw } from '@fortawesome/free-solid-svg-icons';
@@ -17,9 +20,7 @@ const Styles = styled.div`   //Instead of div, can be any html tag required like
 
     .navbar-brand, .navbar-nav .nav-link {
         color: #D2691E;
-
         &:hover {        
-        /* &:hover = Append the hover to the three classes above */
             color: #F96376;
         }
     }

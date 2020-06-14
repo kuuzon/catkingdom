@@ -39,6 +39,4 @@ function App() {
 export default App;
 
 //Iteration notes:
-//[1] Consistency of theme between contact & newsletter (instyles)
-//[2] Consistency of theme with server status 
-//[3] Add further functionality to home page catalogue (maybe Flickr API endpoint?)
+//[1] Add further functionality to home page catalogue (maybe Flickr API / https://thecatapi.com/ endpoint?)

@@ -1,7 +1,23 @@
-//Import packages
+//Import React components
 import React, { useState, Fragment } from 'react';
+
+//Import packages
 import { Form, Button, Alert } from 'react-bootstrap';
+import styled from 'styled-components';
 import axios from 'axios';
+
+//Custom styles for navs
+const H2 = styled.h2`
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #D2691E;
+`;
+
+const P = styled.p`
+    font-size: 1rem;
+    color: black;
+    padding-bottom: 1rem;
+`;
 
 const Contact = () => {
 
@@ -50,8 +66,8 @@ const Contact = () => {
 
     return (
         <Fragment>
-            <h1>Contact Form</h1>
-            <p>Please provide your feedback here:</p>
+            <H2>Contact Form</H2>
+            <P>Please provide your feedback here:</P>
             {/* Alert Display */}
             {
                 show === true ?

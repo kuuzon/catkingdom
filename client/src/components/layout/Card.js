@@ -1,16 +1,27 @@
+//Import React components
 import React from 'react';
+
+//Import packages
 import { Card, CardColumns } from 'react-bootstrap';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
 //Import images
 import catMeme1 from '../../assets/catmeme1.jpg';
 import catMeme2 from '../../assets/catmeme2.jpg';
 import catMeme3 from '../../assets/catmeme3.jpg';
 
+//Custom styles CSS
+const Styles = styled.div`
+    .maincolumn {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+`;
+
 const CatCard = () => {
     return (
-        // <Styles>
-            <CardColumns>
+        <Styles>
+            <CardColumns className="maincolumn">
             <Card>
                 <Card.Img variant="top" src={catMeme1} />
                 <Card.Body>
@@ -102,7 +113,7 @@ const CatCard = () => {
                 </Card.Body>
             </Card>
             </CardColumns>
-        // </Styles>
+        </Styles>
     )
 }
 

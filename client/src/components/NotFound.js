@@ -1,4 +1,7 @@
+//Import React components
 import React from 'react';
+
+//Import packages
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';

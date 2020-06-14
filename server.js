@@ -6,7 +6,6 @@ const newsletterRoutes = require('./routes/newsletter');
 const emailRoutes = require('./routes/email');
 const statusRoutes = require('./routes/status');
 
-
 //Init application
 const app = express();
 
@@ -26,3 +25,4 @@ app.listen(PORT, console.log(`Server started on port: ${PORT}`));
 //Iteration notes:
 //[1] Add Nexmo functionality
 //[2] Add SEO/Analytics functionality
+//[3] Add further functionality to home page catalogue (maybe Flickr API / https://thecatapi.com/ endpoint?)

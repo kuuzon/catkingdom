@@ -1,4 +1,4 @@
-//Import packages/modules
+//Import packages
 require('dotenv').config();
 const express = require('express');
 const request = require('request');
@@ -13,8 +13,9 @@ router.post('/', (req, res) => {
     console.log(email);
   
     if (!firstName || !lastName || !email){
+      // Header message
       res.status(400).send('Please ensure that all fields are filled out correctly');
-      return; // header message
+      return; 
     }
     
     // Construct req data 

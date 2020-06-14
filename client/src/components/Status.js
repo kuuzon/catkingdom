@@ -1,23 +1,31 @@
+//Import React components
 import React, {useState} from 'react';
+
+//Import packages
 import styled from 'styled-components';
 import axios from 'axios';
 import {Button} from 'react-bootstrap';
 
 const Styles = styled.div`
-    background-color: palegreen;
+    background-color: #F9BE8B;
     color: black;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 2rem;
     margin: 1rem;
     text-align: center;
+
+    .servermessage {
+        padding-top: 1rem;
+    }
 `
 
 const Status = () => {
-    
+    //Initial state
     const [serverStatus, setServerStatus] = useState({
         message: ''
     });
     
+    //GET (Read) function
     const getServerStatus = async () => {
         try{
             const res = await axios.get('/status');
@@ -35,9 +43,10 @@ const Status = () => {
     return (
         <Styles>
             <div>
-                <Button onClick={() => getServerStatus()}>Check Server status</Button>
-                <br/>
-                { serverStatus.message }
+                <Button variant="dark" onClick={() => getServerStatus()}>Check Server status</Button>
+                <div className="servermessage">
+                    { serverStatus.message }
+                </div>
             </div>
         </Styles>
     )
