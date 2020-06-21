@@ -22,10 +22,6 @@ const Styles = styled.div`
             color: #F96376;
         }
     }
-
-    .d-inline-block {
-        color: #F96376;
-    }
 `;
 
 const BottomNav = () => {
