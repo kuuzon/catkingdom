@@ -6,14 +6,14 @@ import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`  
-    .mainlayout {
-        padding-bottom: 2rem;
+    .container {
+        margin-bottom: 4rem;
     }
 `;
 
 const Layout = props => (
     <Styles>
-        <Container className="mainlayout">
+        <Container>
             {props.children}
         </Container>
     </Styles>

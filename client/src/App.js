@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
+import Sms from './components/Sms';
 import Status from './components/Status';
 import NotFound from './components/NotFound';
 
@@ -28,6 +29,7 @@ function App() {
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/signup' component={Newsletter}></Route>
           <Route exact path='/contact' component={Contact}></Route>
+          <Route exact path='/sms' component={Sms}></Route>
           <Route exact path='/status' component={Status}></Route>
           <Route component={NotFound}></Route>
         </Switch>

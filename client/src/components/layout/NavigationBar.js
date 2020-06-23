@@ -52,7 +52,10 @@ const NavigationBar = () => {
                             <Nav.Link href='/signup'>Newsletter</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href='/contact'>Contact Us</Nav.Link>
+                            <Nav.Link href='/contact'>Email Contact</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href='/sms'>SMS Contact</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href='/status'>Server Status</Nav.Link>

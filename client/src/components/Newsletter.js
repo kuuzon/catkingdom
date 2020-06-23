@@ -31,11 +31,11 @@ const Newsletter = () => {
     const [show, setShow] = useState(false);
     const [alertData, setAlertData] = useState({
         variant: 'danger',
-        message: ''
+        alertMessage: ''
     });
 
     const { firstName, lastName, email } = formData;
-    const { variant, message } = alertData;
+    const { variant, alertMessage } = alertData;
     
     //Post data functions
     const onChange = e => setFormData({
@@ -54,14 +54,14 @@ const Newsletter = () => {
             //Show our alert
             setShow(true);
             //Set the data for the alert
-            setAlertData({ variant: "success", message: res.data })
+            setAlertData({ variant: "success", alertMessage: res.data })
         
         } catch(error) {
             console.log(error);
             //Show our alert
             setShow(true);
             //Set the data for the alert
-            setAlertData({ variant: "danger", message: error.response.data })
+            setAlertData({ variant: "danger", alertMessage: error.response.data })
             //This will link with our server file - and spit out our status for a 400 error
         }
     }
@@ -84,7 +84,7 @@ const Newsletter = () => {
                             { variant === 'success' ? ' Success ' : 'Oops! ...Something went wrong!' }
                         </Alert.Heading>
                         <p>
-                            {message}
+                            {alertMessage}
                         </p>
                     </Alert>
                 ) : null

@@ -10,6 +10,10 @@ const Styles = styled.div`
     .navbar {
         background-color: #D6EAF0;
         height: 2rem;
+        position: absolute;
+        overflow: hidden;
+        bottom: 0;
+        width: 100%;
         /* Scrolling opacity */
         backdrop-filter: saturate(180%) blur(20px);
         opacity: 0.80;
