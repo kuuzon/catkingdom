@@ -76,7 +76,7 @@ const Newsletter = () => {
                 show === true ? 
                 (
                     <Alert 
-                        className='mt-5' 
+                        className='mt-6' 
                         variant={variant} 
                         onClose={() => setShow(false)} dismissible 
                     >
