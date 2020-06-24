@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 
 //Import packages
 import styled from 'styled-components';
-import Card from './layout/Card';
+import CatCard from './layout/CatCard';
 
 //Custom styles for home tags
 const H2 = styled.h2`
@@ -13,12 +13,20 @@ const H2 = styled.h2`
     padding-bottom: 1rem;
 `;
 
+const Styles = styled.div`
+    .card {
+        margin-bottom: 1rem;
+    }
+`;
+
 const Home = () => {
     return (
-        <Fragment>
-            <H2>The CatKingdom Catalogue</H2>
-            <Card />
-        </Fragment>
+        <Styles>
+            <Fragment>
+                <H2>The CatKingdom Catalogue</H2>
+                <CatCard />
+            </Fragment>
+        </Styles>
     )
 }
 
