@@ -4,7 +4,7 @@ import React from 'react'
 //Import packages
 import { Pagination } from 'react-bootstrap';
 
-const PaginationBar = ({imagesPerPage, totalImages, paginate, currentPage, isFirstPage, isLastPage}) => {
+const PaginationBar = ({imagesPerPage, totalImages, paginate, currentPage, isFirstPage, isLastPage}) => {    
     const pageNumbers = [];
  
     for(let i = 1; i <= Math.ceil(totalImages / imagesPerPage ); i++ ) {

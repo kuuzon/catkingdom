@@ -85,7 +85,7 @@ const Home = () => {
             <Fragment>
                 <H2>The CatKingdom Catalogue</H2>
                 <CatCards images={currentImages} loading={loading} />
-                <PaginationBar imagesPerPage={imagesPerPage} totalImages={images.length} paginate={paginate} currentPage={currentPage} isFirstPage={isFirstPage} isLastPage={isLastPage}/>
+                <PaginationBar imagesPerPage={imagesPerPage} totalImages={images.length} paginate={paginate} currentPage={currentPage} isFirstPage={isFirstPage} isLastPage={isLastPage} />
             </Fragment>
         </Styles>
     )

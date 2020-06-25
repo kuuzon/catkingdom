@@ -4,10 +4,13 @@ import React from 'react';
 //Import packages
 import { Card, CardColumns } from 'react-bootstrap';
 
+//Import modules
+import LoadingSpinner from '../layout/LoadingSpinner';
+
 const CatCards = ({ images, loading }) => {
 
     if(loading) {
-        return <h2>Loading...</h2>
+        return < LoadingSpinner />
     }
 
     //Render
